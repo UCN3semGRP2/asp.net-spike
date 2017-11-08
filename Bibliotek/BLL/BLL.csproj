@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BookCtrl.cs" />
     <Compile Include="LbararyCtrl.cs" />
+    <Compile Include="LoanABookCtrl.cs" />
     <Compile Include="LoanerCtrl.cs" />
     <Compile Include="LoanLineCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
