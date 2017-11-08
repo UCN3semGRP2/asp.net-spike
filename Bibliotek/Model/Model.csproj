@@ -43,6 +43,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="Loaner.cs" />
+    <Compile Include="LoanLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

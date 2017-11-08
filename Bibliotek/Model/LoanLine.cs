@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Loaner
+    public class LoanLine
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public List<LoanLine> LoanedBooks { get; set; }
+        public Book Book { get; set; }
+        public Loaner Loaner { get; set; }
     }
 }
