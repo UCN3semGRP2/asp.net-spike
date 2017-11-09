@@ -37,7 +37,7 @@
         <td>
         @{
             var BookID = item.Id;
-            using (Html.BeginForm("MakeLoan", "MakeALoan", FormMethod.Post))
+            @using (Html.BeginForm("MakeLoan", "MakeALoan", FormMethod.Post))
             {
 
                     @Html.HiddenFor(x => BookID)

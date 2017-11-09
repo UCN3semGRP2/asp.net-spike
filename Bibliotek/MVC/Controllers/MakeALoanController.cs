@@ -36,7 +36,7 @@ namespace MVC.Controllers
             return View(model);
         }
         [HttpPost]
-        public ActionResult MakeLoan(int? BookId, int? Item2)
+        public ActionResult MakeLoan(int? Item_Id, int? Item2)
         {
             return View();
         }
