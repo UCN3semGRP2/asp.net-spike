@@ -20,5 +20,10 @@ namespace BLL
             ctx.LoanLines.Add(loanLine);
             ctx.SaveChanges();
         }
+
+        public List<Book> AllBooksInStock()
+        {
+            return new BookCtrl().AllBooksInStock();
+        }
     }
 }
