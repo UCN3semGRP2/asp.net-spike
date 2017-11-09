@@ -153,6 +153,7 @@
     <Compile Include="Controllers\LibrariesController.cs" />
     <Compile Include="Controllers\LoanersController.cs" />
     <Compile Include="Controllers\LoanLinesController.cs" />
+    <Compile Include="Controllers\MakeALoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +216,7 @@
     <Content Include="Views\LoanLines\Details.cshtml" />
     <Content Include="Views\LoanLines\Edit.cshtml" />
     <Content Include="Views\LoanLines\Index.cshtml" />
+    <Content Include="Views\MakeALoan\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
