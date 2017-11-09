@@ -35,6 +35,11 @@ namespace MVC.Controllers
             var model = new Tuple<IEnumerable<Book>, int>(books, LoanerId.Value);
             return View(model);
         }
+        [HttpPost]
+        public ActionResult MakeLoan(int? BookId, int? Item2)
+        {
+            return View();
+        }
         
     }
 }
