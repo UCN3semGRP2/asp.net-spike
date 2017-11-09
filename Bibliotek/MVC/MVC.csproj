@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoanersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -197,6 +198,11 @@
     <Content Include="Views\Books\Details.cshtml" />
     <Content Include="Views\Books\Edit.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Loaners\Create.cshtml" />
+    <Content Include="Views\Loaners\Delete.cshtml" />
+    <Content Include="Views\Loaners\Details.cshtml" />
+    <Content Include="Views\Loaners\Edit.cshtml" />
+    <Content Include="Views\Loaners\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
