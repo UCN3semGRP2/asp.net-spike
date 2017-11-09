@@ -218,6 +218,7 @@
     <Content Include="Views\LoanLines\Index.cshtml" />
     <Content Include="Views\MakeALoan\Index.cshtml" />
     <Content Include="Views\MakeALoan\ChooseLoaner.cshtml" />
+    <Content Include="Views\MakeALoan\ChooseBook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

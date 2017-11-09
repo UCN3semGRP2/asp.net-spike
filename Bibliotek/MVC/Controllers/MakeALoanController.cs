@@ -1,7 +1,9 @@
 ﻿using BLL;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -20,6 +22,17 @@ namespace MVC.Controllers
         {
             var loaners = ctrl.AllLoaners();
             return View(loaners);
+        }
+
+        public ActionResult ChooseBook(int? loanerId)
+        {
+            if (loanerId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var books = ctrl.AllBooksInStock();
+            var model = new Tuple<IEnumerable<Book>, int>(books, loanerId.Value);
+            return View(model);
         }
         
     }
