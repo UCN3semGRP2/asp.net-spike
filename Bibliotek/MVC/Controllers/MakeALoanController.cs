@@ -24,14 +24,15 @@ namespace MVC.Controllers
             return View(loaners);
         }
 
-        public ActionResult ChooseBook(int? loanerId)
+        public ActionResult ChooseBook(int? LoanerId)
         {
-            if (loanerId == null)
+            //int? loanerId = Id;
+            if (LoanerId == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var books = ctrl.AllBooksInStock();
-            var model = new Tuple<IEnumerable<Book>, int>(books, loanerId.Value);
+            var model = new Tuple<IEnumerable<Book>, int>(books, LoanerId.Value);
             return View(model);
         }
         
