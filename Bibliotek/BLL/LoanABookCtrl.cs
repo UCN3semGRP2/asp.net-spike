@@ -25,5 +25,10 @@ namespace BLL
         {
             return new BookCtrl().AllBooksInStock();
         }
+
+        public List<Loaner> AllLoaners()
+        {
+            return new LoanerCtrl().AllLoaners();
+        }
     }
 }
