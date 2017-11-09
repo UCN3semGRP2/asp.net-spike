@@ -1,1 +1,26 @@
-﻿OK
+﻿@model Model.LoanLine
+
+@{
+    ViewBag.Title = "MakeLoan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Loan Created</h2>
+<div>
+    <h4>Loan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id) :
+            @Html.DisplayFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.Book.ISBN) :
+            @Html.DisplayFor(model => model.Book.ISBN)
+            @Html.DisplayNameFor(model => model.Loaner.Name) :
+            @Html.DisplayFor(model => model.Loaner.Name)
+        </dd>
+
+    </dl>
+</div>

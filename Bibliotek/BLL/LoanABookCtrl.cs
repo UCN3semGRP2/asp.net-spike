@@ -12,15 +12,19 @@ namespace BLL
     {
         DALContext ctx = new DALContext();
 
-        public void MakeLoan(int loanerId, int bookId)
+        public LoanLine MakeLoan(int loanerId, int bookId)
         {
             var loaner = ctx.Loaners.Find(loanerId);
             var book = ctx.Books.Find(bookId);
             var loanLine = new LoanLine { Loaner = loaner, Book = book };
+            // this is wrong but works 
+            var booksLoaned = new List<LoanLine>();
+            loaner.LoanedBooks = booksLoaned;
             loaner.LoanedBooks.Add(loanLine);
 
             ctx.LoanLines.Add(loanLine);
             ctx.SaveChanges();
+            return loanLine;
         }
 
         public List<Book> AllBooksInStock()

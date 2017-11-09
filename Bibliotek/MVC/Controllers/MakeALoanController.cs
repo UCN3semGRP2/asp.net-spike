@@ -36,9 +36,10 @@ namespace MVC.Controllers
             return View(model);
         }
         [HttpPost]
-        public ActionResult MakeLoan(int? Item_Id, int? Item2)
+        public ActionResult MakeLoan(int? BookID, int? Item2)
         {
-            return View();
+            var newLoanLine = ctrl.MakeLoan(BookID.Value, Item2.Value);
+            return View(newLoanLine);
         }
         
     }
