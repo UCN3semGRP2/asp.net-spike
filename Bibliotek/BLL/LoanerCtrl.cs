@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,12 @@ namespace BLL
 {
     public class LoanerCtrl
     {
+        DAL.DALContext ctx = new DAL.DALContext();
+
+        public List<Loaner> AllLoaners()
+        {
+            return ctx.Loaners.ToList();
+        }
     }
+
 }
