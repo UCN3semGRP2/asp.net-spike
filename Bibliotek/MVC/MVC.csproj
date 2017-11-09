@@ -150,7 +150,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LibrariesController.cs" />
     <Compile Include="Controllers\LoanersController.cs" />
+    <Compile Include="Controllers\LoanLinesController.cs" />
+    <Compile Include="Controllers\MakeALoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +206,17 @@
     <Content Include="Views\Loaners\Details.cshtml" />
     <Content Include="Views\Loaners\Edit.cshtml" />
     <Content Include="Views\Loaners\Index.cshtml" />
+    <Content Include="Views\Libraries\Create.cshtml" />
+    <Content Include="Views\Libraries\Delete.cshtml" />
+    <Content Include="Views\Libraries\Details.cshtml" />
+    <Content Include="Views\Libraries\Edit.cshtml" />
+    <Content Include="Views\Libraries\Index.cshtml" />
+    <Content Include="Views\LoanLines\Create.cshtml" />
+    <Content Include="Views\LoanLines\Delete.cshtml" />
+    <Content Include="Views\LoanLines\Details.cshtml" />
+    <Content Include="Views\LoanLines\Edit.cshtml" />
+    <Content Include="Views\LoanLines\Index.cshtml" />
+    <Content Include="Views\MakeALoan\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
